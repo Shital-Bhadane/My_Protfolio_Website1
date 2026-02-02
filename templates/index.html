@@ -1,11 +1,279 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Portfolio Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shital Bhadane | Data Scientist & AI Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+    scroll-behavior:smooth;
+}
+
+/* ===== Header ===== */
+header{
+    text-align:center;
+    padding:70px 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+header img{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    border:4px solid #00e5ff;
+    margin-bottom:20px;
+    object-fit:cover;
+}
+
+header h1{
+    font-size:38px;
+    font-weight:600;
+}
+
+header p{
+    font-size:18px;
+    opacity:0.9;
+    margin-bottom:20px;
+}
+
+/* ===== Buttons ===== */
+.header-btns a{
+    display:inline-block;
+    margin:8px;
+    padding:12px 22px;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.linkedin{
+    background:#00e5ff;
+    color:#000;
+}
+
+.email{
+    border:1px solid #00e5ff;
+    color:#00e5ff;
+}
+
+.header-btns a:hover{
+    transform:scale(1.05);
+    opacity:0.85;
+}
+
+/* ===== Sections ===== */
+section{
+    max-width:1100px;
+    margin:50px auto;
+    padding:20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:30px;
+    color:#00e5ff;
+}
+
+/* ===== Cards ===== */
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding:25px;
+    border-radius:18px;
+    transition:0.4s;
+    animation: slideUp 1s ease;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    background:rgba(255,255,255,0.15);
+}
+
+.card h3{
+    color:#00e5ff;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:14px;
+    opacity:0.9;
+    margin-bottom:15px;
+}
+
+/* ===== Project Buttons ===== */
+.btn{
+    display:inline-block;
+    padding:10px 18px;
+    margin-right:10px;
+    border-radius:25px;
+    text-decoration:none;
+    font-size:13px;
+    transition:0.3s;
+}
+
+.demo{
+    background:#00e5ff;
+    color:#000;
+}
+
+.code{
+    border:1px solid #00e5ff;
+    color:#00e5ff;
+}
+
+.btn:hover{
+    opacity:0.85;
+}
+
+/* ===== Skills ===== */
+.skills{
+    text-align:center;
+}
+
+.skills span{
+    display:inline-block;
+    background:rgba(255,255,255,0.15);
+    padding:8px 15px;
+    border-radius:20px;
+    margin:7px;
+    font-size:13px;
+}
+
+/* ===== Footer ===== */
+footer{
+    text-align:center;
+    padding:25px;
+    font-size:14px;
+    opacity:0.8;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(-30px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes slideUp{
+    from{opacity:0; transform:translateY(50px);}
+    to{opacity:1; transform:translateY(0);}
+}
+</style>
 </head>
+
 <body>
-   <h2> My Portfolio Wesite </h2>
+
+<!-- ===== Header ===== -->
+<header>
+    <img src="shital2.jpg" alt="Shital Bhadane">
+    <h1>Shital Bhadane</h1>
+    <p>Data Science | AI & ML Engineer | Software Developer</p>
+
+    <div class="header-btns">
+        <a href="https://www.linkedin.com/in/shital-bhadane-039a96325/" class="linkedin" target="_blank">LinkedIn</a>
+        <a href="mailto:bhadaneshital856@gmail.com" class="email">Email Me</a>
+    </div>
+</header>
+
+<!-- ===== About ===== -->
+<section>
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:850px; margin:auto;">
+        Motivated IT professional with a strong foundation in software development and a growing specialization
+        in Data Science, Artificial Intelligence, and Machine Learning. Passionate about building data-driven,
+        intelligent solutions that solve real-world problems.
+    </p>
+</section>
+
+<!-- ===== Skills ===== -->
+<section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Data Analysis</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Matplotlib</span>
+        <span>EDA</span>
+        <span>Statistics</span>
+        <span>SQL</span>
+        <span>MySQL</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Angular</span>
+        <span>Azure</span>
+        <span>SAP ABAP</span>
+    </div>
+</section>
+
+<!-- ===== Projects ===== -->
+<section>
+    <h2>Projects</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Medical Diagnosis Web App</h3>
+            <p>AI-based medical diagnostic system that predicts potential health conditions using user inputs.</p>
+            <a href="https://mbhadane.pythonanywhere.com/" class="btn demo" target="_blank">Live Demo</a>
+            <a href="https://github.com/Shital-Bhadane/medical_dignosis" class="btn code" target="_blank">Source Code</a>
+        </div>
+
+        <div class="card">
+            <h3>AI Career Path Predictor</h3>
+            <p>Machine learning application that recommends optimal career paths based on education and skills.</p>
+            <a href="https://sbhadane.pythonanywhere.com/" class="btn demo" target="_blank">Live Demo</a>
+            <a href="https://github.com/Shital-Bhadane/AI_CAREER_PATH_PREDICTOR1" class="btn code" target="_blank">Source Code</a>
+        </div>
+
+        <div class="card">
+            <h3>AI Travel Planner</h3>
+            <p>AI-powered travel planning system with intelligent recommendations and interactive UI.</p>
+            <a href="https://shitalbhadane.pythonanywhere.com/" class="btn demo" target="_blank">Live Demo</a>
+            <a href="https://github.com/Shital-Bhadane/AI_Travel_Planner" class="btn code" target="_blank">Source Code</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ===== Education ===== -->
+<section>
+    <h2>Education</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>MBA – IT (Software Developer)</h3>
+            <p>Pune University | 2024</p>
+        </div>
+        <div class="card">
+            <h3>BSc – Electronics</h3>
+            <p>2022</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 | Shital Bhadane | Data & AI Portfolio
+</footer>
 
 </body>
 </html>
